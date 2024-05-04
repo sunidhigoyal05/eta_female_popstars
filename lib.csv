@@ -1,0 +1,12 @@
+artist,nationality,genre,decade_of_prominence,birth_year,instruments,character_count
+ADELE,British,"Pop, Soul",2010s,1988,"['Vocals', 'Piano']",76812
+AMY WINEHOUSE,British,"Jazz, R&B, Soul",2000s,1983,"['Vocals', 'Guitar']",52459
+ARIANA GRANDE,American,"Pop, R&B",2010s,1993,"['Vocals', 'Piano']",89008
+BEYONCE,American,"Pop, R&B",2000s,1981,"['Vocals', 'Piano']",146783
+CYNDI LAUPER,American,"Pop, Rock",1980s,1953,"['Vocals', 'Guitar']",54669
+DOLLY PARTON,American,"Country, Pop",1970s,1946,"['Vocals', 'Guitar']",59805
+DUA LIPA,British," Dance-pop, Pop",2020s,1995,['Vocals'],84067
+LAURYN HILL,American,"Hip-Hop, R&B",1990s,1975,"['Vocals', 'Guitar']",129809
+PINK,American,"Pop, Rock",2000s,1979,"['Vocals', 'Guitar']",93059
+TAYLOR SWIFT,American,"Country, Pop",2000s,1989,"['Vocals', 'Guitar', 'Piano']",96348
+WHITNEY HOUSTON,American,"Pop, R&B",1980s,1963,"['Vocals', 'Piano']",84037

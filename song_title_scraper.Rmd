@@ -1,0 +1,226 @@
+---
+title: "Song Title Scraper"
+author: "Sunidhi Goyal"
+date: "2024-03-17"
+output: html_document
+---
+
+PINK
+
+```{r}
+# Load the necessary library
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.song-list.net/pink/songs/"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[3:140]
+# Print the list of song names
+
+pinksongs<-song_list[seq(1, length(song_list), by=2)]
+print(pinksongs)
+
+writeLines(pinksongs, "pink_song_titles.txt")
+
+```
+
+ADELE
+
+```{r}
+# Load the necessary library
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.song-list.net/adele/songs/"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[3:70]
+# Print the list of song names
+adelesongs<-song_list[seq(1, length(song_list), by=2)]
+print(adelesongs)
+writeLines(adelesongs, "adele_song_titles.txt")
+
+```
+
+
+
+TAYLOR SWIFT 
+```{r}
+# Load the necessary library
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.songfacts.com/songs/taylor-swift"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[41:238]
+print(song_list)
+
+writeLines(song_list, "taylor_swift_song_titles.txt")
+
+
+```
+
+AMY WINEHOUSE
+
+```{r}
+# Load the necessary library
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.songfacts.com/songs/amy-winehouse"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[41:62]
+print(song_list)
+
+writeLines(song_list, "amy_winehouse_song_titles.txt")
+
+
+```
+BEYONCE
+
+```{r}
+# Load the necessary library
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.songfacts.com/songs/beyonce"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[41:137]
+print(song_list)
+
+
+writeLines(song_list, "beyonce_song_titles.txt")
+```
+
+```{r}
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.songfacts.com/songs/madonna"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[41:146]
+print(song_list)
+
+
+writeLines(song_list, "madonna_song_titles.txt")
+```
+MISSY ELLIOTT
+
+```{r}
+# Load the necessary library
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.song-list.net/missyelliott/songs/"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[3:70]
+print(song_list)
+# Print the list of song names
+missyelliottsongs<-song_list[seq(1, length(song_list), by=2)]
+print(missyelliottsongs)
+writeLines(missyelliottsongs, "missy_elliott_song_titles.txt")
+
+```
+LAURYN HILL
+
+```{r}
+# Load the necessary library
+library(rvest)
+
+# URL of the page to scrape
+url <- "https://www.song-list.net/laurynhill/songs/"
+
+# Read the HTML content from the URL
+html <- read_html(url)
+
+# Extract the song names
+song_nodes <- html_nodes(html, "a")
+
+# Get the song names
+song_list <- html_text(song_nodes)
+
+# Remove empty strings
+song_list <- song_list[song_list != ""]
+song_list<-song_list[3:76]
+
+laurynhillsongs<-song_list[seq(1, length(song_list), by=2)]
+print(laurynhillsongs)
+writeLines(laurynhillsongs, "lauryn_hill_song_titles.txt")
+```
+
